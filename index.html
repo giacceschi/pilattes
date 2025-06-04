@@ -1,10 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <title>Moja pierwsza strona</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilattes Studio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2a2a2a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('https://github.com/giacceschi/pilattes/blob/main/background.png');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .about, .contact, .newsletter {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 10px 20px;
+            background-color: #2a2a2a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #444;
+        }
+        footer {
+            background-color: #2a2a2a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Witaj na mojej stronie!</h1>
-    <p>To działa 🎉</p>
+
+<header>
+    <img src="https://via.placeholder.com/100x100" alt="Palm Studio Logo">
+    <nav>
+        <a href="#about">O nas</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#newsletter">Newsletter</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Witaj w Pilattes Studio</h1>
+    <p>Twoje miejsce na holistyczny trening i relaks</p>
+</section>
+
+<section id="about" class="about">
+    <h2>O nas</h2>
+    <p>W Pilattes Studio oferujemy unikalne zajęcia pilates w atmosferze spokoju i elegancji. Nasze studio inspirowane jest stylem Tulum, łączącym naturalne materiały z nowoczesnym designem.</p>
+</section>
+
+<section id="gallery" class="gallery">
+    <h2>Galeria</h2>
+    <img src="https://via.placeholder.com/1500x800" alt="Wnętrze studia">
+    <img src="https://via.placeholder.com/1500x800" alt="Zajęcia pilates">
+</section>
+
+<section id="contact" class="contact">
+    <h2>Kontakt</h2>
+    <p>Kajdasza 38/U8, Wrocław</p>
+    <p>+48 509 723 353</p>
+    <p>studio@pilattes.pl</p>
+    <form action="mailto:studio@pilattes.pl" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Twoje imię" required>
+        <input type="email" name="email" placeholder="Twój e-mail" required>
+        <textarea name="message" placeholder="Twoja wiadomość" rows="4" required></textarea>
+        <button type="submit">Wyślij wiadomość</button>
+    </form>
+</section>
+
+<section id="newsletter" class="newsletter">
+    <h2>Zapisz się do newslettera</h2>
+    <form action="mailto:studio@pilattes.pl" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="Twój e-mail" required>
+        <button type="submit">Zapisz się</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Pilattes Studio | Wszystkie prawa zastrzeżone</p>
+</footer>
+
 </body>
 </html>
